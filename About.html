@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student details</title>
+    <style>
+        body {
+            background-image: url(image5.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 200px;
+          
+            
+        }
+        .container img {
+    border: 5px solid black; 
+}
+
+
+        img {
+            width: 30%;
+            height: 30%;
+            z-index: -1; 
+            margin-right: 700px;
+            border: violet;
+
+        }
+
+        .details {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border: 2px solid red;
+            z-index: 1; /* Bring the details to the front */
+            margin-left: 150px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1.2;
+        }
+
+        h2,
+        p {
+            margin: 0; /* Remove default margin for h2 and p */
+        }
+        .Btn {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  border-radius: 45px;
+  border: none;
+  background-color: rgb(151, 95, 255);
+  color: white;
+  box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px rgb(124, 54, 255) inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <ul>
+        <button class="Btn">
+            <a href="http://127.0.0.1:5500/index.html">GO BACK</a>
+           </button>
+        <li></li>
+    </ul>
+
+    <div class="container">
+      <img src="sanketimage.jpg" alt="">
+      <div class="details">
+          <h2>I am a Software <br>Developer</h2><br>
+          <p>I have completed my Btech from Nanasaheb Mahadik College of Engineering from CSE stream with first class distinction. I live in Islampur. Throughout my academic journey, I have gained a solid foundation in core Java, object-oriented programming, multithreading, and the collection framework. Additionally, I am proficient in SQL, HTML, and CSS.Furthermore, I have gained practical experience as a Core Java Intern, where I completed a project under the guidance of experienced trainers. This experience enabled me to develop my technical skills and gave me a deeper understanding of the software development life cycle.
+
+            In addition to my technical skills, I possess excellent interpersonal skills and a strong commitment to customer satisfaction. I am a quick learner, adaptable, and able to work effectively in both independent and collaborative settings. I am confident that my strong work ethic and dedication to excellence will make me a valuable asset to your organization.<br><br> Thank You!
+          </p>
+      </div>
+  </div>
+
+</body>
+
+</html>

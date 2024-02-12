@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>index</title>
+    <style>   
+        body {
+            background-image: url(image33.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            
+        }
+
+        header {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+        div {
+            height: 20vh;
+            width: 80vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin: 20px auto;
+        }
+        #sanket {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    margin-left: 50px;
+   
+}
+
+
+#sanket a {
+    margin-bottom: 5px; 
+    margin-left: 65px; 
+}
+
+        
+       
+
+
+         
+        li {
+            list-style-type: none;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #ffb347; 
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 0px;
+            margin-left: 1px;
+           
+            
+        }
+        li :hover{
+          background-color: #dc773d;
+        }
+
+        img {
+            height: 15vh;
+            width: 7vw;
+            padding-top: 20px;
+            margin-right: 1200px;
+           
+           
+        }
+        
+        header img {
+            height: 200px; 
+            width: 200px;  
+            object-fit: cover; 
+            border-radius: 50%; 
+            margin-bottom: 5px;
+            
+            
+        }
+
+
+        h1 {
+            width: fit-content;
+            text-align: center;
+            font-size: 50px;
+            border: 10px ridge black;
+            color: #efebde;
+            border-radius: 30px;
+            background-color: #4b4545; 
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+
+    .cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #ff7d00;
+    background: linear-gradient(0deg, rgba(255, 125, 0, 1) 0%, rgba(255, 95, 109, 1) 100%);
+    border: 2px solid #ff7d00;
+    border-radius: 20em;
+    margin-top: -46px; /* Add margin to create a gap */
+    margin-left: 400px;
+    margin-right: 120px;
+}
+
+.cssbuttons-io-button svg {
+    float: right;
+    
+  
+  
+}
+
+.cssbuttons-io-button:hover {
+  border-color: white;
+  box-shadow: 0 0.5em 1.5em -0.5em #bf5800;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #bf5800;
+}
+
+
+.button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 13em;
+  height: 3.6em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+  
+}
+
+.button:hover {
+  background-color: #3654ff;
+  cursor: pointer;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+ 
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+nav {
+           
+            gap: 20px;
+           
+           
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+           
+        }
+
+        nav a:hover {
+            color: #5120ff; /* Violet */
+            background-color: #87ceeb; /* Light Sky Blue */
+        }
+
+
+
+
+footer {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 80px;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+.foot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+
+.footer button {
+    margin-right: 10px; 
+}
+.btn0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background-color: darkgreen;
+  margin-left: 3px;
+  backdrop-filter: blur(0px);
+}
+
+.btn0 {
+  background-color: #166527;
+}
+
+    
+
+
+.Btn1 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BD {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2f49ce;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn1:hover .BD {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn1:hover .svgContainer {
+  border: 1px solid rgba(230, 230, 230, 0.466);
+  background-color: rgba(204, 204, 204, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+
+
+.Btn2 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-right: 20px;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BF {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2c2828;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn2:hover .BE {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn2:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+
+.Btn3 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-right: 20px;
+}
+
+.svgContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+
+.BE {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn3:hover .BF {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn3:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+
+
+
+.Btn4 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {                        
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2f4cc9;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn4:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn4:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(190, 190, 190, 0.466);
+  backdrop-filter: blur(4px);
+}
+.p {
+  font-family: 'Cambria', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 10px;
+  line-height: 1.4; 
+  letter-spacing: 1px; 
+  padding-right: 40%;
+  margin-right: 60px;
+}
+.gsstylish-button
+{
+  margin-top: 20px;
+  margin-right: 200px;
+  background-color: #0077b5;
+  border-radius: 9px;
+  
+  
+}
+img[src="portfolio-logo.jpg"] {
+    width: 250px;
+    height: auto;
+    margin-left: 50px;
+   margin-top: -50px;
+   
+}
+
+
+    </style>
+</head>
+
+<body>
+  <img src="portfolio-logo.jpg" alt="">
+    <header>
+      
+        
+        <div id="sanket">
+           <nav>
+            <a href="http://127.0.0.1:5500/About.html">ABOUT ME</a>
+            <a href="http://127.0.0.1:5500/education.html">EDUCATION</a>
+            <a href="https://drive.google.com/file/d/1FiMnQCZj_HidgAW8QKIqAu47nA3Fke6W/view?usp=drivesdk">PROJECTS</a>
+            <a href="https://drive.google.com/file/d/1ylpuOWmJPktyXDwEfWYojX1UGu78JPE6/view?usp=drivesdk">CERTIFICATES</a>
+            <a href="http://127.0.0.1:5500/contactme.html">CONTACT ME</a>
+          </nav>
+        </div>
+        <h1>Hey there, I am a Software Developer</h1>
+        
+
+      
+        <a href="http://127.0.0.1:5500/GetStarted.html" class="gsstylish-button">
+            <button class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                </svg>
+                <span>MORE ABOUT ME</span>
+            </button>
+        </a>
+        
+        
+  
+        </button>
+             
+             <a href="https://drive.google.com/file/d/1F8y3cI_5e9YWAAZJoX4UaQR-ABXuDas_/view?usp=drivesdk" class="cssbuttons-io-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"></path>
+                </svg>
+                <span>Download Resume</span>
+            </a>
+            
+        
+    </header>
+   
+    <footer>
+         
+                <!-- Call button -->
+                <button class="btn0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="22" fill="none" class="svg-icon"><path stroke-width="3" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
+                </button>
+                <p class="p">Let's Connect on Social Media ! , Feel free to contact</p>
+
+
+                <!-- Facebook button -->
+
+        <a href="https://www.facebook.com/sanket.salunkhe.9277" class="Btn1">
+          
+            <span class="svgContainer">
+                <!-- Facebook SVG Icon -->
+                <svg viewBox="0 0 320 512" height="2em" xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="white"> <path
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  ></path>
+                </svg>
+                    <!-- Facebook SVG path -->
+                </svg>
+            </span>
+            <span class="BD"></span>
+        </a>
+    
+        <!-- Instagram button -->
+        <a href="https://instagram.com/its_me__sanket110?igshid=MzMyNGUyNmU2YQ==" class="Btn2">
+            <span class="svgContainer">
+                <!-- Instagram SVG Icon -->
+                <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="2em"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    <!-- Instagram SVG path -->
+                </svg>
+            </span>
+            <span class="BE"></span>
+        </a>
+    
+        <!-- GitHub button -->
+        <a href="https://github.com/SANKETSALUNKHE1234" class="Btn3">
+            <span class="svgContainer">
+                <!-- GitHub SVG Icon -->
+                <svg fill="white" viewBox="0 0 496 512" height="2em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                </svg>
+                    <!-- GitHub SVG path -->
+                </svg>
+            </span>
+            <span class="BF"></span>
+        </a>
+    
+        <!-- LinkedIn button -->
+        <a href="https://www.linkedin.com/in/sanket-salunkhe-9b0a42221" class="Btn4">
+            <span class="svgContainer">
+                <!-- LinkedIn SVG Icon -->
+                <svg viewBox="0 0 448 512" height="2em" xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="white"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+                </svg>
+                    <!-- LinkedIn SVG path -->
+                </svg>
+            </span>
+            <span class="BG"></span>
+        </a>
+    </footer>
+
+    
+
+</body>
+
+</html>

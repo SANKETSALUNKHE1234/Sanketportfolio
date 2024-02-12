@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Education Details</title>
+    <style>
+        body {
+            background-image: url(education.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            border: 2px ridge red;
+            background-color: palevioletred;
+            margin: 0;
+            padding: 20px;
+        }
+
+        marquee {
+            font-size: 24px;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+            height: 60px;
+        }
+
+        td {
+            background-color: goldenrod;
+            height: 70px;
+        }
+
+        legend {
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            td {
+                background-color: goldenrod;
+                height: 70px;
+            }
+        }
+
+        .btn {
+ position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: black;
+ background-color: white;
+}
+
+.btn:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+.btn::after {
+ background-color: #fff;
+}
+
+.btn:hover::after {
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1><marquee behavior="scroll">****About my Education Details****</marquee></h1>
+        <fieldset>
+            <center>
+                <legend>Education Details</legend>
+            </center>
+            <table border="6">
+                <tr>
+                    <th>School Name</th>
+                    <th>University Name</th>
+                    <th>Percentage</th>
+                    <th>Passout Year</th>
+                </tr>
+
+                <tr>
+                    <td>Vidyaniketan English Medium School</td>
+                    <td>Maharashtra State Board of Technical Education</td>
+                    <td>80.80</td>
+                    <td>May 2017</td>
+                </tr>
+
+                <tr>
+                    <td>Vidyamandir Highschool And Junior College</td>
+                    <td>Maharashtra State Board of Technical Education</td>
+                    <td>61.38</td>
+                    <td>June 2019</td>
+                </tr>
+
+                <tr>
+                    <td>Nanasaheb Mahadik College of Engineering</td>
+                    <td>Dr. Babasaheb Ambedkar Technological University</td>
+                    <td>75.76</td>
+                    <td>July 2023</td>
+                </tr>
+            </table>
+        </fieldset>
+        
+<button class="btn">
+    <a href="http://127.0.0.1:5500/index.html">Go Back</a>
+</button>
+        
+
+    </center>
+</body>
+
+</html>
